@@ -52,7 +52,7 @@ public class UserItem   {
   
   
   
-  private UUID idUser = null;
+  private Long idUser = null;
   
 
   
@@ -142,7 +142,7 @@ public class UserItem   {
   
   
   
-  public UserItem idUser(UUID idUser) {
+  public UserItem idUser(Long idUser) {
     this.idUser = idUser;
     return this;
   }
@@ -167,12 +167,12 @@ public class UserItem   {
 
   @NotNull
 
-  public UUID getIdUser() {
+  public Long getIdUser() {
     return idUser;
   }
   
 
-  public void setIdUser(UUID idUser) {
+  public void setIdUser(Long idUser) {
     this.idUser = idUser;
   }
   
