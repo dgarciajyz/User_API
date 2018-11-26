@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.math.BigDecimal;
-import java.util.UUID;
+import java.util.Long;
 
 
 
@@ -45,7 +45,7 @@ public class DestinationItem   {
   
   
   
-  private UUID idDestination = null;
+  private Long idDestination = null;
   
 
   
@@ -87,7 +87,7 @@ public class DestinationItem   {
   
   
   
-  public DestinationItem idDestination(UUID idDestination) {
+  public DestinationItem idDestination(Long idDestination) {
     this.idDestination = idDestination;
     return this;
   }
@@ -112,12 +112,12 @@ public class DestinationItem   {
 
   @NotNull
 
-  public UUID getIdDestination() {
+  public Long getIdDestination() {
     return idDestination;
   }
   
 
-  public void setIdDestination(UUID idDestination) {
+  public void setIdDestination(Long idDestination) {
     this.idDestination = idDestination;
   }
   

@@ -22,7 +22,6 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.Date;
-import java.util.UUID;
 
 
 
@@ -45,7 +44,7 @@ public class WarningItem   {
   
   
   
-  private UUID idWarning = null;
+  private Long idWarning = null;
   
 
   
@@ -63,7 +62,7 @@ public class WarningItem   {
   
   
   
-  public WarningItem idWarning(UUID idWarning) {
+  public WarningItem idWarning(Long idWarning) {
     this.idWarning = idWarning;
     return this;
   }
@@ -88,12 +87,12 @@ public class WarningItem   {
 
   @NotNull
 
-  public UUID getIdWarning() {
+  public Long getIdWarning() {
     return idWarning;
   }
   
 
-  public void setIdWarning(UUID idWarning) {
+  public void setIdWarning(Long idWarning) {
     this.idWarning = idWarning;
   }
   

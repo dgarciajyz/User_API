@@ -21,7 +21,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.util.UUID;
 
 
 
@@ -44,7 +43,7 @@ public class AchievementItem   {
   
   
   
-  private UUID idAchievement = null;
+  private Long idAchievement = null;
   
 
   
@@ -86,7 +85,7 @@ public class AchievementItem   {
   
   
   
-  public AchievementItem idAchievement(UUID idAchievement) {
+  public AchievementItem idAchievement(Long idAchievement) {
     this.idAchievement = idAchievement;
     return this;
   }
@@ -111,12 +110,12 @@ public class AchievementItem   {
 
   @NotNull
 
-  public UUID getIdAchievement() {
+  public Long getIdAchievement() {
     return idAchievement;
   }
   
 
-  public void setIdAchievement(UUID idAchievement) {
+  public void setIdAchievement(Long idAchievement) {
     this.idAchievement = idAchievement;
   }
   

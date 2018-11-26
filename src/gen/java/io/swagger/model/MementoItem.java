@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.math.BigDecimal;
-import java.util.UUID;
+import java.util.Long;
 
 
 
@@ -45,7 +45,7 @@ public class MementoItem   {
   
   
   
-  private UUID idMemento = null;
+  private Long idMemento = null;
   
 
   
@@ -99,7 +99,7 @@ public class MementoItem   {
   
   
   
-  public MementoItem idMemento(UUID idMemento) {
+  public MementoItem idMemento(Long idMemento) {
     this.idMemento = idMemento;
     return this;
   }
@@ -124,12 +124,12 @@ public class MementoItem   {
 
   @NotNull
 
-  public UUID getIdMemento() {
+  public Long getIdMemento() {
     return idMemento;
   }
   
 
-  public void setIdMemento(UUID idMemento) {
+  public void setIdMemento(Long idMemento) {
     this.idMemento = idMemento;
   }
   

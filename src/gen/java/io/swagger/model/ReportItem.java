@@ -22,7 +22,6 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.Date;
-import java.util.UUID;
 
 
 
@@ -45,7 +44,7 @@ public class ReportItem   {
   
   
   
-  private UUID idReport = null;
+  private Long idReport = null;
   
 
   
@@ -63,7 +62,7 @@ public class ReportItem   {
   
   
   
-  public ReportItem idReport(UUID idReport) {
+  public ReportItem idReport(Long idReport) {
     this.idReport = idReport;
     return this;
   }
@@ -88,12 +87,12 @@ public class ReportItem   {
 
   @NotNull
 
-  public UUID getIdReport() {
+  public Long getIdReport() {
     return idReport;
   }
   
 
-  public void setIdReport(UUID idReport) {
+  public void setIdReport(Long idReport) {
     this.idReport = idReport;
   }
   
