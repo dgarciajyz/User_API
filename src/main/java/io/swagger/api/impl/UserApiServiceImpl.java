@@ -81,7 +81,7 @@ public class UserApiServiceImpl extends UserApiService {
     public Response getUserById(Long userId, SecurityContext securityContext) throws NotFoundException {
         for(int index=0;index<list_users.size();index++){
             if(list_users.get(index).getIdUser().equals(userId)){
-                return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, list_users.get(index).toString())).build();
+                return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, list_users.get(index).getName())).build();
             }
         }
         return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "user not found!")).build();
